@@ -1,12 +1,16 @@
 {
   "name": "ng-add-to-calendar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "angular add to calendar",
     "add to calendar"
   ],
   "author": "namane Toufik <namane.toufik@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ToufikDev/ng-add-to-calendar.git"
+  },
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14",

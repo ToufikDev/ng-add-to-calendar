@@ -1,27 +1,67 @@
-# NgAddToCalendar
+# ng-add-to-calendar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+Angular 2+ add to calendar.
 
-## Development server
+<!-- toc -->
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Install](#install)
+- [Usage](#usage)
+- [Feedback](#feedback)
 
-## Code scaffolding
+<!-- tocstop -->
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Install
 
-## Build
+```bash
+npm install ng-add-to-calendar --save
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Usage
 
-## Running unit tests
+The basic usage scenario can be described in three steps.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Step 1. Import the module
 
-## Running end-to-end tests
+```typescript
+import { AddToCalendarModule } from "ng-add-to-calendar";
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Step 2. Import the module to yours
 
-## Further help
+```typescript
+@NgModule({
+  imports: [
+    ...,
+    AddToCalendarModule,
+  ],
+  ...
+})
+...
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Step 3. Import the module to yours
+
+```typescript
+addToCalendarData: IAddToCalendarData {
+  title: string;
+  description: string;
+  location: string;
+  start: Date;
+  end: Date;
+}
+...
+```
+
+### Step 4. Use the component in your template
+
+```html
+<!-- with default markup -->
+<ng-add-to-calendar [options]="addToCalendarData"></ng-add-to-calendar>
+```
+
+## Feedback
+
+Issues and PRs are welcome. You can provide your feedback or drop us a support
+request at [namane.toufik@gmail.com][email].
+
+[mail]: mailto:namane.toufik@gmail.com

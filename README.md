@@ -62,6 +62,6 @@ addToCalendarData: IAddToCalendarData {
 ## Feedback
 
 Issues and PRs are welcome. You can provide your feedback or drop us a support
-request at [namane.toufik@gmail.com][email].
+request at [namane.toufik@gmail.com][mail].
 
 [mail]: mailto:namane.toufik@gmail.com

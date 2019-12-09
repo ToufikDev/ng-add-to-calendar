@@ -1,0 +1,62 @@
+#container {
+  position: relative;
+  width: 350px;
+  text-align: center;
+  padding: 10px 0;
+
+  .btn {
+    background-color: #00cf76;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 15px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      background-color: white;
+      color: #00cf76;
+    }
+
+    &.active {
+      background-color: white;
+      color: #00cf76;
+    }
+  }
+
+  #item-list {
+    position: absolute;
+    right: 75px;
+    left: 75px;
+    top: 50px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 0;
+    background: linear-gradient(108.61deg, #303749 0%, #353d53 96.94%);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .item {
+      list-style-type: none;
+
+      .btn {
+        width: 150px;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<div id="container" (clickOutside)="toggler = false">
+  <button class="btn" [ngClass]="toggler ? 'active' : ''" (click)="toggler = true">Ajouter a mon Calendrier</button>
+
+  <ul id="item-list" *ngIf="toggler" [@dialog]>
+    <li class="item" *ngFor="let calendar of calendars">
+      <button class="btn" (click)="openCalendar(calendar.url)">{{calendar.name}}</button>
+    </li>
+  </ul>
+</div>

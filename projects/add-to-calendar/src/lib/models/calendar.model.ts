@@ -23,7 +23,7 @@ export class Calendar {
    * @param  [options.recurrence.weekdays] - comma-separated list of uppercase, first two letters of the days the event occurs on
    * @param  [options.recurrence.monthdays] - comma-separated list of monthdays	String of numbers
    */
-
+  label: string;
   title: string;
   description: string;
   location: string;

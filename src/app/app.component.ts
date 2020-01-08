@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { IAddToCalendarData } from "add-to-calendar/lib/models/add-to-calendar-options.model";
+import { IAddToCalendarData } from "../../projects/add-to-calendar/src/lib/models/add-to-calendar-options.model";
 
 @Component({
   selector: "app-root",
@@ -10,9 +10,10 @@ export class AppComponent {
   title = "ng-add-to-calendar";
 
   public addToCalendarOptions: IAddToCalendarData = {
-    title: "Prospect",
-    description: "Rendez-vous prospect",
-    location: "Advency",
+    label: "Add to my calendar",
+    title: "Title",
+    description: "Description",
+    location: "Location",
     start: new Date(),
     end: new Date()
   };

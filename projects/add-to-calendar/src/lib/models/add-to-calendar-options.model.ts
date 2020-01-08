@@ -4,6 +4,7 @@ export interface IAddToCalendarOptions {
 }
 
 export interface IAddToCalendarData {
+  label: string;
   title: string;
   description: string;
   location: string;

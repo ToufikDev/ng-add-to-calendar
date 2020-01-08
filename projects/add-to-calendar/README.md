@@ -43,6 +43,7 @@ import { AddToCalendarModule } from "ng-add-to-calendar";
 
 ```typescript
 addToCalendarData: IAddToCalendarData {
+  label: string;
   title: string;
   description: string;
   location: string;

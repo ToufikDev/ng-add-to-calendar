@@ -5,6 +5,7 @@ import { IAddToCalendarData } from "../models/add-to-calendar-options.model";
 import GoogleCalendar from "../models/google.model";
 import OutlookCalendar from "../models/outlook.model";
 import YahooCalendar from "../models/yahoo.model";
+import ICalendar from "../models/icalendar.model";
 
 @Component({
   selector: "ng-add-to-calendar",
@@ -18,10 +19,12 @@ export class AddToCalendarComponent implements OnInit {
   public toggler = false;
   public calendarNames = ["Google", "Outlook", "Yahoo"];
   public calendars = [];
+  public iCalendar;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
+    this.iCalendar = new ICalendar(this.options);
     for (let calendarName of this.calendarNames) {
       switch (calendarName) {
         case "Google":
@@ -38,6 +41,9 @@ export class AddToCalendarComponent implements OnInit {
           };
           this.calendars.push(outlook);
           break;
+        case "iCalendar":
+
+          break;
         case "Yahoo":
           let yahoo = {
             name: calendarName,
@@ -53,6 +59,11 @@ export class AddToCalendarComponent implements OnInit {
 
   openCalendar(url: string) {
     window.open(url, "_blank");
+    this.toggler = false;
+  }
+
+  downloadICalendar() {
+    this.iCalendar.download();
     this.toggler = false;
   }
 }

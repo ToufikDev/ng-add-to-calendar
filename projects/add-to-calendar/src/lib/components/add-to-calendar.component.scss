@@ -5,18 +5,27 @@
   padding: 10px 0;
 
   .btn {
-    background-color: #00cf76;
+    opacity: 0.7;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #292929;
     border: none;
-    border-radius: 8px;
-    color: white;
+    border-radius: 20px;
     padding: 10px 15px;
     margin: 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    //   0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
 
     &:focus {
@@ -24,12 +33,10 @@
     }
 
     &:hover {
-      background-color: white;
       color: #00cf76;
     }
 
     &.active {
-      background-color: white;
       color: #00cf76;
     }
   }
@@ -38,18 +45,15 @@
     position: absolute;
     right: 75px;
     left: 75px;
-    top: 50px;
+    top: 35px;
 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
-    padding: 10px 0;
-    background: linear-gradient(108.61deg, #303749 0%, #353d53 96.94%);
-    border-radius: 8px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+    background-color: #fff;
 
     .item {
       list-style-type: none;

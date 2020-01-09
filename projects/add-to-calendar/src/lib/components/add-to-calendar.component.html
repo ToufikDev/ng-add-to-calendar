@@ -5,5 +5,8 @@
     <li *ngFor="let calendar of calendars">
       <button (click)="openCalendar(calendar.url)">{{calendar.name}}</button>
     </li>
+    <li class="item">
+      <button class="btn" (click)="downloadICalendar()">iCalendar</button>
+    </li>
   </ul>
 </div>
